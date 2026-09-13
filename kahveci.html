@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Third Wave Coffee - Özel Kahve Deneyimi</title>
+<style>
+:root{
+--primary:#2c1810;
+--accent:#d4a373;
+--bg:#faf8f5;
+--text:#333;
+--muted:#777;
+--radius:12px;
+--shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+a{color:inherit;text-decoration:none}
+header{background:var(--primary);color:#fff;padding:1rem 0}
+.header-content{max-width:1200px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:0 1rem}
+.logo{font-size:1.8rem;font-weight:bold}
+nav ul{display:flex;gap:1.5rem;list-style:none}
+nav a{font-weight:500;padding:.3rem 0;border-bottom:2px solid transparent;transition:border-color .3s}
+nav a:hover{border-color:var(--accent)}
+.hero{background:url('https://image.pollinations.ai/prompt/third%20wave%20coffee%20shop%20interior?width=1600&height=900&nologo=true') center/cover no-repeat;color:#fff;text-align:center;padding:6rem 1rem;position:relative}
+.hero::after{content:"";position:inset:0;background:rgba(0,0,0,0.4)}
+.hero>*{position:relative;z-index:1}
+.hero h1{font-size:2.8rem;margin-bottom:.5rem}
+.hero p{font-size:1.2rem;margin-bottom:1.5rem}
+.cta{display:inline-block;background:var(--accent);color:#2c1810;padding:.8rem 1.5rem;border-radius:var(--radius);font-weight:600;transition:background .3s}
+.cta:hover{background:#e0b98a}
+section{padding:4rem 1rem;max-width:1000px;margin:auto}
+.section-title{font-size:2rem;margin-bottom:2rem;text-align:center;color:var(--primary)}
+.content{display:grid;gap:2rem}
+@media(min-width:768px){.content{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}}
+.card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;transform:translateY(0);transition:transform .3s}
+.card:hover{transform:translateY(-4px)}
+.card img{width:100%;height:180px;object-fit:cover}
+.card-body{padding:1.2rem}
+.card-body h3{margin-bottom:.5rem;color:var(--primary)}
+.card-body p{color:var(--muted);font-size:.9rem}
+.menu-grid{display:grid;gap:1.5rem}
+@media(min-width:768px){.menu-grid{grid-template-columns:repeat(2,1fr)}}
+.menu-item{display:flex;align-items:center;gap:1rem;padding:1rem;border-bottom:1px solid #eee}
+.menu-item img{width:80;height:80;object-fit:cover;border-radius:8px}
+.menu-info{flex:1}
+.menu-info h4{margin:0 0 .3rem 0;color:var(--primary)}
+.menu-info p{margin:0;color:var(--muted);font-size:.9rem}
+.price{font-weight:600;color:var(--accent)}
+.contact{display:flex;gap:2rem;align-items:flex-start}
+.contact-info{flex:1}
+.contact-info p{margin:.5rem 0}
+.map{flex:1;min-width:280px}
+.map iframe{width:100%;height:300px;border:none;border-radius:var(--radius)}
+footer{background:var(--primary);color:#ddd;text-align:center;padding:2rem 0;font-size:.9rem}
+footer a{color:var(--accent)}
+</style>
+</head>
+<body>
+<header>
+<div class="header-content">
+<div class="logo">Third Wave Coffee</div>
+<nav>
+<ul>
+<li><a href="#about">Hakkımızda</a></li>
+<li><a href="#menu">Menü</a></li>
+<li><a href="#location">Lokasyon</a></li>
+<li><a href="#contact">İletişim</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<section class="hero" id="home">
+<div>
+<h1>Özel Kahve Deneyimi</h1>
+<p>Tek parti, özel kıvam ve aromalı kahveler</p>
+<a href="#menu" class="cta">Menüyü Gör</a>
+</div>
+</section>
+
+<section id="about" class="section">
+<h2 class="section-title">Hakkımızda</h2>
+<div class="content">
+<div class="card">
+<img src="https://image.pollinations.ai/prompt/coffee%20beans%20close%20up?width=500&height=300&nologo=true" alt="Kahve çekirdeği">
+<div class="card-body">
+<h3>Özel Seçkin Kahveler</h3>
+<p>Dünyanın farklı kökenlerinden gelen, dikkatle seçilmiş mikrolot kahveleri sunuyoruz.</p>
+</div>
+</div>
+<div class="card">
+<img src="https://image.pollinations.ai/prompt/barista%20pouring%20latte%20art?width=500&height=300&nologo=true" alt="Latte art">
+<div class="card-body">
+<h3>Usta Baristalar</h3>
+<p>Eğitim almış baristalarımız her fincanı sanat yapar.</p>
+</div>
+</div>
+<div class="card">
+<img src="https://image.pollinations.ai/prompt/cozy%20cafe%20interior%20with%20plants?width=500&height=300&nologo=true" alt="Kafe iç mekan">
+<div class="card-body">
+<h3>Sakin Ortam</h3>
+<p>Çalışmak, okumak veya sohbet etmek için tasarlanmış mekan.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="menu" class="section">
+<h2 class="section-title">Menü</h2>
+<div class="menu-grid">
+<div class="menu-item">
+<img src="https://image.pollinations.ai/prompt/espresso%20shot?width=400&height=400&nologo=true" alt="Espresso">
+<div class="menu-info">
+<h4>Espresso</h4>
+<p>Yoğun ve aromatik tek çekim.</p>
+</div>
+<span class="price">25 ₺</span>
+</div>
+<div class="menu-item">
+<img src="https://image.pollinations.ai/prompt/cappuccino%20foam?width=400&height=400&nologo=true" alt="Cappuccino">
+<div class="menu-info">
+<h4>Cappuccino</h4>
+<p>İnek sütüyle hafif köpük.</p>
+</div>
+<span class="price">30 ₺</span>
+</div>
+<div class="menu-item">
+<img src="https://image.pollinations.ai/prompt/latte%20art?width=400&height=400&nologo=true" alt="Latte">
+<div class="menu-info">
+<h4>Latte</h4>
+<p>Yumuşak süt dengesi.</p>
+</div>
+<span class="price">32 ₺</span>
+</div>
+<div class="menu-item">
+<img src="https://image.pollinations.ai/prompt/filter%20coffee%20pour%20over?width=400&height=400&nologo=true" alt="Filter Coffee">
+<div class="menu-info">
+<h4>Pour Over</h4>
+<p>Ince filtrile temiz profil.</p>
+</div>
+<span class="price">28 ₺</span>
+</div>
+</div>
+</section>
+
+<section id="location" class="section">
+<h2 class="section-title">Lokasyon</h2>
+<div class="contact">
+<div class="contact-info">
+<p><strong>Adres:</strong> Atatürk Cad. No: 12, Beyoğlu, İstanbul</p>
+<p><strong>Telefon:</strong> 0212 555 01 23</p>
+<p><strong>Çalışma Saatleri:</strong> 08:00 – 20:00</p>
+</div>
+<div class="map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3000.5!2d28.975!3d41.025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa5f9f9b2b3bf%3A0x5b4c6e6c2b9d5c2e!2sAtat%C3%BCrk%20Cad.%20No%3A12%2C%20Beyo%C4%9Flu%2C%20%C4%B0stanbul!5e0!3m2!1str!2str!4v1700000000000" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</div>
+</section>
+
+<section id="contact" class="section">
+<h2 class="section-title">İletişim</h2>
+<div class="content">
+<div class="card">
+<h3>Bize Ulaşın</h3>
+<p>Soru, öneri veya rezervasyon için aşağıdaki formu doldurun.</p>
+<form id="contactForm">
+<input type="text" placeholder="Adınız" required style="width:100%;padding:.5rem;margin:.5rem 0;border:1px solid #ccc;border-radius:4px;">
+<input type="email" placeholder="E-posta" required style="width:100%;padding:.5rem;margin:.5rem 0;border:1px solid #ccc;border-radius:4px;">
+<textarea placeholder="Mesajınız" rows="4" required style="width:100%;padding:.5rem;margin:.5rem 0;border:1px solid #ccc;border-radius:4px;"></textarea>
+<button type="submit" style="background:var(--accent);color:#2c1810;border:none;padding:.7rem 1.2rem;border-radius:var(--radius);cursor:pointer;font-weight:600;">Gönder</button>
+</form>
+</div>
+</div>
+</section>
+
+<footer>
+<div>© <span id="year"></span> Third Wave Coffee. Tüm hakları saklıdır.</div>
+</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+// Simple form submit prevention (demo)
+document.getElementById('contactForm').addEventListener('submit', function(e){
+e.preventDefault();
+alert('Teşekkür ederiz! Mesajınız iletildi.');
+this.reset();
+});
+</script>
+</body>
+</html>
